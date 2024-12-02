@@ -47,10 +47,6 @@ export default function TabsNavigator() {
           title: 'Profile',
           headerRight: () => (
             <HeaderRight>
-              
-                <TouchableOpacity style={styles.menuItem} onPress={() => console.log('Media Grup')}>
-                  <Text style={styles.menuText}>Laporkan</Text>
-                </TouchableOpacity>
                 <TouchableOpacity style={styles.menuItem} onPress={async () => await supabase.auth.signOut()}>
                   <Text style={styles.menuText}>Sign Out</Text>
                 </TouchableOpacity>

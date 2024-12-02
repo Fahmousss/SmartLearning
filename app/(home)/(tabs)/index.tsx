@@ -30,8 +30,6 @@ export default function Main() {
         onSelect={async (channel) => {
           router.push(`/channel/${channel.cid}`);
           let sort = { user_id: 'asc' };
-          //   console.log(await channel.queryMembers({}, sort, {}));
-          console.log(channel.data?.displayName);
         }}
         PreviewAvatar={({ channel }) => <ChannelAvatar channel={channel} />}
       />

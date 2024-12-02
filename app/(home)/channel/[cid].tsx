@@ -22,9 +22,6 @@ export default function ChannelScreen() {
     };
     fetchChannel();
   }, [cid]);
-  console.log(cid);
-  console.log(channel);
-
 
   if (!channel) {
     return <ActivityIndicator />;
